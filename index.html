@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Creation - Premium Photo Frames</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary-gold': '#D4AF37',
+              'deep-bronze': '#CD7F32',
+              'navy-blue': '#1e3a8a',
+              'rich-indigo': '#312e81',
+              'soft-peach': '#fef7f0',
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            animation: {
+              float: 'float 6s ease-in-out infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out',
+              'slide-in-left': 'slideInLeft 0.8s ease-out',
+              'slide-in-right': 'slideInRight 0.8s ease-out',
+              'luxury-pulse': 'luxuryPulse 3s infinite',
+              bounce: 'bounce 0.5s ease',
+              shake: 'shake 0.5s ease',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              fadeInUp: {
+                'from': { opacity: '0', transform: 'translateY(30px)' },
+                'to': { opacity: '1', transform: 'translateY(0)' },
+              },
+              slideInLeft: {
+                'from': { transform: 'translateX(-100%)', opacity: '0' },
+                'to': { transform: 'translateX(0)', opacity: '1' },
+              },
+              slideInRight: {
+                'from': { transform: 'translateX(100%)', opacity: '0' },
+                'to': { transform: 'translateX(0)', opacity: '1' },
+              },
+              luxuryPulse: {
+                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(212, 175, 55, 0.4)' },
+                '50%': { transform: 'scale(1.02)', boxShadow: '0 0 0 10px rgba(212, 175, 55, 0)' },
+              },
+              shake: {
+                '0%, 100%': { transform: 'translateX(0)' },
+                '25%': { transform: 'translateX(-5px)' },
+                '75%': { transform: 'translateX(5px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .premium-gradient-text {
+        background: linear-gradient(135deg, #D4AF37 0%, #CD7F32 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .premium-gradient-bg {
+        background: linear-gradient(135deg, #D4AF37 0%, #CD7F32 100%);
+      }
+      /* Hide scrollbar for cleaner modals */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 text-gray-900 antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
