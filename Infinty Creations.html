@@ -1,0 +1,2130 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinity Creation - Premium Photo Frames | Coimbatore, Tamil Nadu</title>
+  <script src="/_sdk/data_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        body {
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        :root {
+            --primary-gold: #D4AF37;
+            --deep-bronze: #CD7F32;
+            --navy-blue: #1e3a8a;
+            --rich-indigo: #312e81;
+            --pure-white: #ffffff;
+            --soft-peach: #fef7f0;
+            --luxury-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            --premium-gradient: linear-gradient(135deg, #D4AF37 0%, #CD7F32 100%);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes slideInUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes luxuryPulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+            50% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+        }
+        
+        @keyframes premiumShine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .premium-btn {
+            background: var(--premium-gradient);
+            color: white;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .premium-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--luxury-shadow);
+        }
+        
+        .premium-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .premium-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s;
+        }
+        
+        .premium-btn:hover::before {
+            left: 100%;
+        }
+        
+        .luxury-card {
+            background: var(--pure-white);
+            border-radius: 16px;
+            box-shadow: var(--luxury-shadow);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            overflow: hidden;
+        }
+        
+        .luxury-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        .premium-gradient-bg {
+            background: linear-gradient(135deg, var(--soft-peach) 0%, var(--pure-white) 100%);
+        }
+        
+        .gold-accent {
+            color: var(--primary-gold);
+        }
+        
+        .navy-text {
+            color: var(--navy-blue);
+        }
+        
+        .indigo-text {
+            color: var(--rich-indigo);
+        }
+        
+        .premium-border {
+            border: 2px solid var(--primary-gold);
+        }
+        
+        .luxury-shadow {
+            box-shadow: var(--luxury-shadow);
+        }
+        
+        .float { animation: float 6s ease-in-out infinite; }
+        .fade-in-up { animation: fadeInUp 0.8s ease-out; }
+        .slide-in-left { animation: slideInLeft 0.8s ease-out; }
+        .slide-in-right { animation: slideInRight 0.8s ease-out; }
+        .slide-in-up { animation: slideInUp 0.8s ease-out; }
+        .luxury-pulse { animation: luxuryPulse 3s infinite; }
+        
+        .premium-text-gradient {
+            background: var(--premium-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 24px;
+            background: var(--pure-white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid var(--primary-gold);
+        }
+        
+        .achievement-stat {
+            text-align: center;
+            padding: 24px;
+            background: var(--pure-white);
+            border-radius: 16px;
+            box-shadow: var(--luxury-shadow);
+            border-top: 3px solid var(--primary-gold);
+        }
+        
+        .filter-tab {
+            padding: 12px 24px;
+            border: 2px solid var(--primary-gold);
+            background: transparent;
+            color: var(--primary-gold);
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-tab.active,
+        .filter-tab:hover {
+            background: var(--premium-gradient);
+            color: white;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+        }
+        
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            max-width: 90vw;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slideInUp 0.4s ease-out;
+            box-shadow: var(--luxury-shadow);
+        }
+        
+        .photo-preview {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        
+        .cart-counter {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--primary-gold);
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border: 2px solid white;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 64px;
+            height: 64px;
+            bottom: 24px;
+            right: 24px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 8px 32px rgba(37, 211, 102, 0.3);
+            z-index: 100;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.4);
+        }
+        
+        .offer-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: var(--premium-gradient);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 24px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            animation: luxuryPulse 3s infinite;
+        }
+        
+        .star-rating {
+            display: inline-flex;
+            gap: 4px;
+        }
+        
+        .star {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #d1d5db;
+            transition: color 0.2s;
+        }
+        
+        .star.active,
+        .star:hover {
+            color: var(--primary-gold);
+        }
+        
+        .premium-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: var(--pure-white);
+        }
+        
+        .premium-input:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+            margin: 4rem 0;
+        }
+
+        .owner-login-btn {
+            position: fixed;
+            bottom: 100px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            background: var(--premium-gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+            z-index: 99;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .owner-login-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spinner 0.6s linear infinite;
+        }
+
+        @keyframes spinner {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .premium-btn {
+                padding: 10px 24px;
+                font-size: 14px;
+            }
+
+            .sticky-nav .max-w-7xl {
+                padding: 0 1rem;
+            }
+
+            .sticky-nav .flex.justify-between {
+                flex-wrap: wrap;
+            }
+
+            @media (max-width: 640px) {
+                .hidden-mobile {
+                    display: none !important;
+                }
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .text-6xl {
+                font-size: 2.5rem;
+            }
+            
+            .text-7xl {
+                font-size: 3rem;
+            }
+
+            .text-5xl {
+                font-size: 2rem;
+            }
+
+            .text-4xl {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="bg-gray-50"><!-- Privacy Policy Banner -->
+  <div id="privacyBanner" class="bg-white text-gray-700 text-center py-2 px-4 text-sm border-b border-gray-200"><span>🔒 We respect your privacy. </span> <button onclick="showPrivacyPolicy()" class="underline hover:text-gray-900 font-medium">Read our Privacy Policy</button> <button onclick="closePrivacyBanner()" class="ml-4 text-gray-500 hover:text-gray-700">✕</button>
+  </div><!-- Special Offer Banner -->
+  <div style="background: var(--premium-gradient);" class="text-white text-center py-4"><span class="font-bold text-lg">🎉 Special Offer: UPTO 50% OFF on Bulk Orders! 🎉</span>
+  </div><!-- Navigation -->
+  <nav class="sticky-nav luxury-shadow bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20 lg:h-28 px-2"><!-- Left: Logo Section -->
+     <div class="flex items-center">
+      <div class="flex flex-col">
+       <h1 class="text-lg lg:text-2xl font-bold serif-font premium-text-gradient whitespace-nowrap">Infinity Creation</h1>
+       <p class="text-xs lg:text-sm text-gray-600 font-light tracking-wide whitespace-nowrap hidden-mobile" style="font-family: 'Montserrat', sans-serif; font-weight: 300;">Drafted dreams. Endless memories</p>
+      </div>
+     </div><!-- Center: Navigation Links (Hidden on mobile) -->
+     <div class="hidden lg:flex items-center space-x-8 mx-12"><a href="#products" class="text-base font-medium navy-text hover:gold-accent transition-all duration-300 px-2 py-1 rounded hover:bg-yellow-50">Shop All Frames</a> <a href="#products" class="text-base font-medium navy-text hover:gold-accent transition-all duration-300 px-2 py-1 rounded hover:bg-yellow-50">Combo Offers</a> <button onclick="applyAmbassador()" class="text-base font-medium navy-text hover:gold-accent transition-all duration-300 px-2 py-1 rounded hover:bg-yellow-50">Campus Ambassador</button> <a href="#about" class="text-base font-medium navy-text hover:gold-accent transition-all duration-300 px-2 py-1 rounded hover:bg-yellow-50">About Us</a> <button onclick="scrollToContact()" class="text-base font-medium navy-text hover:gold-accent transition-all duration-300 px-2 py-1 rounded hover:bg-yellow-50">Contact</button>
+     </div><!-- Right: Action Items -->
+     <div class="flex items-center space-x-2 lg:space-x-6"><!-- Cart Icon --> <button onclick="showCart()" class="relative p-2 lg:p-3 navy-text hover:gold-accent transition-colors">
+       <svg class="w-5 h-5 lg:w-7 lg:h-7" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5 6m0 0h9m-9 0V19a2 2 0 002 2h6a2 2 0 002-2v-.5" />
+       </svg><span id="cartCounter" class="cart-counter hidden">0</span> </button> <!-- Mobile Menu Button --> <button onclick="toggleMobileMenu()" class="lg:hidden p-2 navy-text hover:gold-accent transition-colors">
+       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg></button> <!-- Call Now Button --> <a href="tel:8220594867" class="premium-btn text-xs lg:text-sm px-2 lg:px-4 py-1 lg:py-2 font-semibold" style="background: linear-gradient(135deg, var(--navy-blue), var(--rich-indigo)); color: white;"> 📞 Call </a>
+     </div>
+    </div><!-- Mobile Navigation Menu -->
+    <div id="mobileMenu" class="lg:hidden hidden border-t border-gray-200 py-6 bg-white shadow-lg">
+     <div class="flex flex-col space-y-6"><a href="#products" class="text-xl font-bold navy-text hover:gold-accent transition-all duration-300 px-4 py-3 rounded-lg hover:bg-yellow-50 border-l-4 border-transparent hover:border-yellow-600">Shop All Frames</a> <a href="#products" class="text-xl font-bold navy-text hover:gold-accent transition-all duration-300 px-4 py-3 rounded-lg hover:bg-yellow-50 border-l-4 border-transparent hover:border-yellow-600">Combo Offers</a> <button onclick="applyAmbassador()" class="text-xl font-bold navy-text hover:gold-accent transition-all duration-300 text-left px-4 py-3 rounded-lg hover:bg-yellow-50 border-l-4 border-transparent hover:border-yellow-600">Campus Ambassador</button> <a href="#about" class="text-xl font-bold navy-text hover:gold-accent transition-all duration-300 px-4 py-3 rounded-lg hover:bg-yellow-50 border-l-4 border-transparent hover:border-yellow-600">About Us</a> <button onclick="scrollToContact()" class="text-xl font-bold navy-text hover:gold-accent transition-all duration-300 text-left px-4 py-3 rounded-lg hover:bg-yellow-50 border-l-4 border-transparent hover:border-yellow-600">Contact</button>
+     </div>
+    </div>
+   </div>
+  </nav><!-- Hero Section -->
+  <section class="premium-gradient-bg py-12 lg:py-24 relative overflow-hidden">
+   <div class="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent"></div>
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold serif-font navy-text mb-6 slide-in-left">Framing Your <span class="premium-text-gradient">Finest Memories</span></h2>
+    <p class="text-lg lg:text-2xl indigo-text mb-4 slide-in-right font-medium">Premium Photo Frames &amp; Gifts for Every Occasion</p>
+    <p class="text-base lg:text-lg gold-accent mb-12 slide-in-up font-semibold">Starting from ₹150 | All India Shipping</p><!-- Trust Badges -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
+     <div class="trust-badge fade-in-up">
+      <div class="text-2xl lg:text-3xl gold-accent">
+       🚚
+      </div>
+      <div>
+       <div class="font-bold navy-text text-sm lg:text-base">
+        All India Shipping
+       </div>
+       <div class="text-xs lg:text-sm indigo-text">
+        Reliable delivery nationwide
+       </div>
+      </div>
+     </div>
+     <div class="trust-badge fade-in-up">
+      <div class="text-2xl lg:text-3xl gold-accent">
+       ⭐
+      </div>
+      <div>
+       <div class="font-bold navy-text text-sm lg:text-base">
+        Premium Quality
+       </div>
+       <div class="text-xs lg:text-sm indigo-text">
+        Crafted with excellence
+       </div>
+      </div>
+     </div>
+     <div class="trust-badge fade-in-up">
+      <div class="text-2xl lg:text-3xl gold-accent">
+       💬
+      </div>
+      <div>
+       <div class="font-bold navy-text text-sm lg:text-base">
+        24/7 Support
+       </div>
+       <div class="text-xs lg:text-sm indigo-text">
+        WhatsApp assistance
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-center gap-6 slide-in-up"><button onclick="scrollToProducts()" class="premium-btn text-base lg:text-lg px-8 lg:px-12 py-3 lg:py-4"> Shop Photo Frames </button> <a href="https://wa.me/918220594867" class="premium-btn text-base lg:text-lg px-8 lg:px-12 py-3 lg:py-4" style="background: linear-gradient(135deg, #25d366, #128c7e);"> WhatsApp Us </a>
+    </div>
+    <div class="mt-16 float">
+     <div class="text-6xl lg:text-8xl opacity-20">
+      🖼️
+     </div>
+    </div>
+   </div>
+  </section><!-- Products Section -->
+  <section id="products" class="py-20 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><!-- Section Header -->
+    <div class="text-center mb-16">
+     <h3 class="text-3xl lg:text-5xl font-bold serif-font navy-text mb-4">Our Premium Collection</h3>
+     <div class="section-divider w-24 mx-auto"></div>
+     <p class="text-lg lg:text-xl indigo-text font-medium mb-4">Handcrafted frames for your precious memories</p>
+     <p class="text-base lg:text-lg gold-accent font-semibold">Starting at ₹150/- | Premium Quality Guaranteed</p>
+    </div><!-- Special Offers Banner -->
+    <div class="bg-white border-2 border-yellow-600 rounded-2xl p-6 lg:p-8 mb-16 text-center shadow-lg" style="border-color: var(--primary-gold);">
+     <div class="flex items-center justify-center mb-4"><span class="text-2xl lg:text-4xl mr-3">🎉</span>
+      <h4 class="text-xl lg:text-3xl font-bold navy-text serif-font">SPECIAL OFFERS</h4><span class="text-2xl lg:text-4xl ml-3">🎉</span>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="p-6 bg-gray-50 rounded-xl border-l-4 border-yellow-600" style="border-color: var(--primary-gold);">
+       <p class="text-lg lg:text-xl font-semibold navy-text mb-2">BULK ORDERS</p>
+       <p class="text-2xl lg:text-4xl font-bold gold-accent">UPTO 50% OFF</p>
+       <p class="text-sm indigo-text mt-2">Perfect for events &amp; corporate gifting</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-xl border-l-4 border-yellow-600" style="border-color: var(--primary-gold);">
+       <p class="text-lg lg:text-xl font-semibold navy-text mb-2">BEST PRICE GUARANTEE</p>
+       <p class="text-2xl lg:text-4xl font-bold gold-accent">Quality Assured</p>
+       <p class="text-sm indigo-text mt-2">Premium materials, competitive pricing</p>
+      </div>
+     </div>
+    </div><!-- Best Value Combos Section -->
+    <div class="mb-16">
+     <div class="text-center mb-12">
+      <h4 class="text-2xl lg:text-4xl font-bold serif-font navy-text mb-4">🏆 Best Value Combos</h4>
+      <p class="text-base lg:text-lg indigo-text">Maximum savings with our combo packages</p>
+     </div>
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto"><!-- A4 + A5 Combo -->
+      <div class="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-yellow-600 transition-all duration-300 hover:shadow-xl group" style="hover:border-color: var(--primary-gold);">
+       <div class="relative">
+        <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold z-10">
+         SAVE ₹200
+        </div>
+        <div class="p-6 lg:p-8 text-center bg-gradient-to-br from-gray-50 to-white">
+         <div class="text-4xl lg:text-6xl mb-4">
+          🖼️📸
+         </div>
+         <h5 class="text-lg lg:text-2xl font-bold navy-text mb-3 serif-font">A4 + A5 Combo Frame Set</h5>
+         <p class="text-gray-600 mb-6">Perfect duo for home and office display</p>
+         <div class="flex justify-center items-center space-x-4 mb-6"><span class="text-2xl lg:text-4xl font-bold gold-accent">₹599</span> <span class="text-lg lg:text-2xl text-gray-500 line-through">₹799</span> <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-bold">25% OFF</span>
+         </div>
+         <div class="space-y-2 mb-6 text-sm text-gray-600">
+          <p>✓ A4 Frame (210×297 mm)</p>
+          <p>✓ A5 Frame (148×210 mm)</p>
+          <p>✓ Matching design &amp; color</p>
+          <p>✓ Perfect for gifting</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-4 lg:p-6 bg-white border-t border-gray-100">
+        <div class="space-y-3"><button onclick="quickView(3)" class="w-full bg-transparent border-2 border-yellow-600 text-yellow-600 py-2 lg:py-3 px-4 lg:px-6 rounded-lg font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300" style="border-color: var(--primary-gold); color: var(--primary-gold);"> Quick View Details </button> <button onclick="addToCart(3)" class="w-full premium-btn py-2 lg:py-3 px-4 lg:px-6 font-semibold"> Add Combo to Cart </button>
+        </div>
+       </div>
+      </div><!-- A3 + A4 + A5 Combo -->
+      <div class="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-yellow-600 transition-all duration-300 hover:shadow-xl group" style="hover:border-color: var(--primary-gold);">
+       <div class="relative">
+        <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold z-10">
+         SAVE ₹400
+        </div>
+        <div class="p-6 lg:p-8 text-center bg-gradient-to-br from-gray-50 to-white">
+         <div class="text-4xl lg:text-6xl mb-4">
+          🖼️📸🖼️
+         </div>
+         <h5 class="text-lg lg:text-2xl font-bold navy-text mb-3 serif-font">A3 + A4 + A5 Complete Set</h5>
+         <p class="text-gray-600 mb-6">Ultimate family pack with all popular sizes</p>
+         <div class="flex justify-center items-center space-x-4 mb-6"><span class="text-2xl lg:text-4xl font-bold gold-accent">₹1,299</span> <span class="text-lg lg:text-2xl text-gray-500 line-through">₹1,699</span> <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-bold">24% OFF</span>
+         </div>
+         <div class="space-y-2 mb-6 text-sm text-gray-600">
+          <p>✓ A3 Frame (297×420 mm)</p>
+          <p>✓ A4 Frame (210×297 mm)</p>
+          <p>✓ A5 Frame (148×210 mm)</p>
+          <p>✓ Complete family solution</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-4 lg:p-6 bg-white border-t border-gray-100">
+        <div class="space-y-3"><button onclick="quickView(4)" class="w-full bg-transparent border-2 border-yellow-600 text-yellow-600 py-2 lg:py-3 px-4 lg:px-6 rounded-lg font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300" style="border-color: var(--primary-gold); color: var(--primary-gold);"> Quick View Details </button> <button onclick="addToCart(4)" class="w-full premium-btn py-2 lg:py-3 px-4 lg:px-6 font-semibold"> Add Complete Set </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div><!-- Shop All Sizes Section -->
+    <div class="mb-16">
+     <div class="text-center mb-12">
+      <h4 class="text-2xl lg:text-4xl font-bold serif-font navy-text mb-4">📐 Shop All Sizes</h4>
+      <p class="text-base lg:text-lg indigo-text">Individual frames in every size you need</p>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- A5 Frame -->
+      <div class="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-yellow-600 transition-all duration-300 hover:shadow-xl group" style="hover:border-color: var(--primary-gold);">
+       <div class="relative">
+        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold z-10">
+         BESTSELLER
+        </div>
+        <div class="p-6 text-center bg-gradient-to-br from-gray-50 to-white">
+         <div class="text-4xl lg:text-5xl mb-4">
+          🖼️
+         </div>
+         <h5 class="text-lg lg:text-xl font-bold navy-text mb-2 serif-font">A5 Size Photo Frame</h5>
+         <p class="text-gray-600 text-sm mb-4">Perfect for desk &amp; table display</p>
+         <div class="flex justify-center items-center space-x-3 mb-4"><span class="text-2xl lg:text-3xl font-bold gold-accent">₹199</span> <span class="text-base lg:text-lg text-gray-500 line-through">₹347</span>
+         </div>
+         <p class="text-xs text-gray-500 mb-4">148×210 mm | Multiple colors available</p>
+        </div>
+       </div>
+       <div class="p-4 bg-white border-t border-gray-100">
+        <div class="space-y-2"><button onclick="quickView(1)" class="w-full bg-transparent border border-yellow-600 text-yellow-600 py-2 px-4 rounded-lg text-sm font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300" style="border-color: var(--primary-gold); color: var(--primary-gold);"> Quick View </button> <button onclick="addToCart(1)" class="w-full premium-btn py-2 px-4 text-sm font-semibold"> Add to Cart </button>
+        </div>
+       </div>
+      </div><!-- A4 Frame -->
+      <div class="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-yellow-600 transition-all duration-300 hover:shadow-xl group" style="hover:border-color: var(--primary-gold);">
+       <div class="p-6 text-center bg-gradient-to-br from-gray-50 to-white">
+        <div class="text-4xl lg:text-5xl mb-4">
+         🖼️
+        </div>
+        <h5 class="text-lg lg:text-xl font-bold navy-text mb-2 serif-font">A4 Size Photo Frame</h5>
+        <p class="text-gray-600 text-sm mb-4">Classic size for photos &amp; certificates</p>
+        <div class="flex justify-center items-center space-x-3 mb-4"><span class="text-2xl lg:text-3xl font-bold gold-accent">₹349</span> <span class="text-base lg:text-lg text-gray-500 line-through">₹599</span>
+        </div>
+        <p class="text-xs text-gray-500 mb-4">210×297 mm | Professional finish</p>
+       </div>
+       <div class="p-4 bg-white border-t border-gray-100">
+        <div class="space-y-2"><button onclick="quickView(2)" class="w-full bg-transparent border border-yellow-600 text-yellow-600 py-2 px-4 rounded-lg text-sm font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300" style="border-color: var(--primary-gold); color: var(--primary-gold);"> Quick View </button> <button onclick="addToCart(2)" class="w-full premium-btn py-2 px-4 text-sm font-semibold"> Add to Cart </button>
+        </div>
+       </div>
+      </div><!-- A3 Frame -->
+      <div class="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-yellow-600 transition-all duration-300 hover:shadow-xl group" style="hover:border-color: var(--primary-gold);">
+       <div class="p-6 text-center bg-gradient-to-br from-gray-50 to-white">
+        <div class="text-4xl lg:text-5xl mb-4">
+         🖼️
+        </div>
+        <h5 class="text-lg lg:text-xl font-bold navy-text mb-2 serif-font">A3 Size Photo Frame</h5>
+        <p class="text-gray-600 text-sm mb-4">Large display for posters &amp; art</p>
+        <div class="flex justify-center items-center space-x-3 mb-4"><span class="text-2xl lg:text-3xl font-bold gold-accent">₹599</span> <span class="text-base lg:text-lg text-gray-500 line-through">₹899</span>
+        </div>
+        <p class="text-xs text-gray-500 mb-4">297×420 mm | Wall mounting ready</p>
+       </div>
+       <div class="p-4 bg-white border-t border-gray-100">
+        <div class="space-y-2"><button onclick="quickView(5)" class="w-full bg-transparent border border-yellow-600 text-yellow-600 py-2 px-4 rounded-lg text-sm font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300" style="border-color: var(--primary-gold); color: var(--primary-gold);"> Quick View </button> <button onclick="addToCart(5)" class="w-full premium-btn py-2 px-4 text-sm font-semibold"> Add to Cart </button>
+        </div>
+       </div>
+      </div><!-- A2 Frame -->
+      <div class="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-yellow-600 transition-all duration-300 hover:shadow-xl group" style="hover:border-color: var(--primary-gold);">
+       <div class="p-6 text-center bg-gradient-to-br from-gray-50 to-white">
+        <div class="text-4xl lg:text-5xl mb-4">
+         🖼️
+        </div>
+        <h5 class="text-lg lg:text-xl font-bold navy-text mb-2 serif-font">A2 Size Photo Frame</h5>
+        <p class="text-gray-600 text-sm mb-4">Extra large for statement displays</p>
+        <div class="flex justify-center items-center space-x-3 mb-4"><span class="text-2xl lg:text-3xl font-bold gold-accent">₹899</span> <span class="text-base lg:text-lg text-gray-500 line-through">₹1,299</span>
+        </div>
+        <p class="text-xs text-gray-500 mb-4">420×594 mm | Premium construction</p>
+       </div>
+       <div class="p-4 bg-white border-t border-gray-100">
+        <div class="space-y-2"><button onclick="quickView(6)" class="w-full bg-transparent border border-yellow-600 text-yellow-600 py-2 px-4 rounded-lg text-sm font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300" style="border-color: var(--primary-gold); color: var(--primary-gold);"> Quick View </button> <button onclick="addToCart(6)" class="w-full premium-btn py-2 px-4 text-sm font-semibold"> Add to Cart </button>
+        </div>
+       </div>
+      </div><!-- A1 Frame -->
+      <div class="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-yellow-600 transition-all duration-300 hover:shadow-xl group" style="hover:border-color: var(--primary-gold);">
+       <div class="relative">
+        <div class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-bold z-10">
+         PREMIUM
+        </div>
+        <div class="p-6 text-center bg-gradient-to-br from-gray-50 to-white">
+         <div class="text-4xl lg:text-5xl mb-4">
+          🖼️
+         </div>
+         <h5 class="text-lg lg:text-xl font-bold navy-text mb-2 serif-font">A1 Size Photo Frame</h5>
+         <p class="text-gray-600 text-sm mb-4">Largest size for maximum impact</p>
+         <div class="flex justify-center items-center space-x-3 mb-4"><span class="text-2xl lg:text-3xl font-bold gold-accent">₹1,499</span> <span class="text-base lg:text-lg text-gray-500 line-through">₹1,999</span>
+         </div>
+         <p class="text-xs text-gray-500 mb-4">594×841 mm | Professional grade</p>
+        </div>
+       </div>
+       <div class="p-4 bg-white border-t border-gray-100">
+        <div class="space-y-2"><button onclick="quickView(7)" class="w-full bg-transparent border border-yellow-600 text-yellow-600 py-2 px-4 rounded-lg text-sm font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300" style="border-color: var(--primary-gold); color: var(--primary-gold);"> Quick View </button> <button onclick="addToCart(7)" class="w-full premium-btn py-2 px-4 text-sm font-semibold"> Add to Cart </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div><!-- Call to Action -->
+    <div class="text-center">
+     <div class="bg-gradient-to-r from-gray-50 to-white p-6 lg:p-8 rounded-2xl border-2 border-yellow-600" style="border-color: var(--primary-gold);">
+      <h4 class="text-xl lg:text-2xl font-bold navy-text mb-4">Need Help Choosing?</h4>
+      <p class="text-gray-600 mb-6">Our experts are here to help you find the perfect frame for your needs</p><a href="https://wa.me/918220594867" class="premium-btn text-base lg:text-lg px-6 lg:px-8 py-2 lg:py-3" style="background: linear-gradient(135deg, #25d366, #128c7e); color: white;"> 💬 Chat with Expert </a>
+     </div>
+    </div>
+   </div>
+  </section><!-- Campus Ambassador Program -->
+  <section class="py-20 premium-gradient-bg">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <h3 class="text-3xl lg:text-5xl font-bold serif-font navy-text mb-6">Join Our Elite Network</h3>
+     <div class="text-4xl lg:text-6xl mb-6 float">
+      🎯
+     </div>
+     <h4 class="text-2xl lg:text-4xl font-bold gold-accent mb-4">CAMPUS AMBASSADOR PROGRAM</h4>
+     <p class="text-lg lg:text-xl indigo-text font-medium">(All Over India)</p>
+     <div class="section-divider w-32 mx-auto mt-8"></div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+     <div class="slide-in-left">
+      <div class="luxury-card p-6 lg:p-10">
+       <h5 class="text-2xl lg:text-3xl font-bold serif-font navy-text mb-8 text-center">Program Benefits</h5>
+       <div class="space-y-6">
+        <div class="flex items-center p-4 bg-gray-50 rounded-lg"><span class="text-2xl lg:text-3xl mr-6 gold-accent">💰</span>
+         <div>
+          <div class="text-lg lg:text-xl font-bold navy-text">
+           80% PROFIT
+          </div>
+          <div class="text-sm indigo-text">
+           Maximum earning potential
+          </div>
+         </div>
+        </div>
+        <div class="flex items-center p-4 bg-gray-50 rounded-lg"><span class="text-2xl lg:text-3xl mr-6 gold-accent">📈</span>
+         <div>
+          <div class="text-lg lg:text-xl font-bold navy-text">
+           Flexible Hours
+          </div>
+          <div class="text-sm indigo-text">
+           Work at your convenience
+          </div>
+         </div>
+        </div>
+        <div class="flex items-center p-4 bg-gray-50 rounded-lg"><span class="text-2xl lg:text-3xl mr-6 gold-accent">🤝</span>
+         <div>
+          <div class="text-lg lg:text-xl font-bold navy-text">
+           Build Network
+          </div>
+          <div class="text-sm indigo-text">
+           Expand professional connections
+          </div>
+         </div>
+        </div>
+        <div class="flex items-center p-4 bg-gray-50 rounded-lg"><span class="text-2xl lg:text-3xl mr-6 gold-accent">🌟</span>
+         <div>
+          <div class="text-lg lg:text-xl font-bold navy-text">
+           Skill Development
+          </div>
+          <div class="text-sm indigo-text">
+           Entrepreneurial experience
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="slide-in-right text-center">
+      <div class="luxury-card p-6 lg:p-10" style="background: var(--premium-gradient);">
+       <div class="text-5xl lg:text-7xl mb-6 luxury-pulse">
+        🚀
+       </div>
+       <h5 class="text-2xl lg:text-3xl font-bold text-white mb-6 serif-font">Ready to Start?</h5>
+       <p class="text-base lg:text-lg text-white mb-8 opacity-90">Join thousands of students across India earning while studying!</p><button onclick="applyAmbassador()" class="premium-btn bg-white text-yellow-600 px-8 lg:px-12 py-3 lg:py-4 text-base lg:text-lg font-bold hover:bg-gray-100 transition-colors" style="background: white; color: var(--primary-gold);"> Apply Now </button>
+       <div class="mt-8 space-y-2 text-white text-sm opacity-90">
+        <p>✓ No investment required</p>
+        <p>✓ Immediate start</p>
+        <p>✓ Full support provided</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Customer Reviews -->
+  <section class="py-16 bg-gray-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h3 class="text-2xl lg:text-3xl font-bold text-center mb-12 gradient-text">What Our Customers Say</h3><!-- Review Statistics -->
+    <div class="text-center mb-12">
+     <div class="text-4xl lg:text-6xl mb-4">
+      ⭐
+     </div>
+     <div class="text-2xl lg:text-3xl font-bold" id="avgRating">
+      5.0
+     </div>
+     <div class="text-gray-600" id="totalReviews">
+      Based on 0 reviews
+     </div>
+    </div><!-- Reviews Grid -->
+    <div id="reviewsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8"><!-- Reviews will be loaded here -->
+    </div><!-- Add Review Form -->
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+     <h4 class="text-lg lg:text-xl font-bold mb-4">Add Your Review</h4>
+     <form id="reviewForm" onsubmit="addReview(event)">
+      <div class="mb-4"><label class="block text-sm font-medium mb-2">Your Name</label> <input type="text" id="reviewName" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+      <div class="mb-4"><label class="block text-sm font-medium mb-2">Rating</label>
+       <div class="star-rating" id="starRating"><span class="star" data-rating="1">★</span> <span class="star" data-rating="2">★</span> <span class="star" data-rating="3">★</span> <span class="star" data-rating="4">★</span> <span class="star" data-rating="5">★</span>
+       </div>
+      </div>
+      <div class="mb-4"><label class="block text-sm font-medium mb-2">Your Review</label> <textarea id="reviewText" required rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+      </div><button type="submit" id="reviewSubmitBtn" class="w-full premium-btn py-2"> Submit Review </button>
+     </form>
+    </div>
+   </div>
+  </section><!-- Sample Gallery -->
+  <section class="py-16 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+     <h3 class="text-3xl lg:text-5xl font-bold serif-font navy-text mb-4">Our Work Gallery</h3>
+     <div class="section-divider w-24 mx-auto"></div>
+     <p class="text-lg lg:text-xl indigo-text font-medium">Showcasing our premium frame craftsmanship</p>
+    </div><!-- Owner Upload Button (Hidden by default) -->
+    <div id="ownerControls" class="text-center mb-8 hidden"><button onclick="showSampleUpload()" class="premium-btn px-6 py-3 font-semibold"> 📸 Upload Sample Work </button>
+    </div>
+    <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"><!-- Gallery items will be loaded here -->
+    </div><!-- Call to Action for Gallery -->
+    <div class="text-center mt-12">
+     <div class="bg-gradient-to-r from-gray-50 to-white p-6 lg:p-8 rounded-2xl border-2 border-yellow-600" style="border-color: var(--primary-gold);">
+      <h4 class="text-xl lg:text-2xl font-bold navy-text mb-4">Love What You See?</h4>
+      <p class="text-gray-600 mb-6">Get your own custom frame crafted with the same premium quality</p><a href="https://wa.me/918220594867" class="premium-btn text-base lg:text-lg px-6 lg:px-8 py-2 lg:py-3" style="background: linear-gradient(135deg, #25d366, #128c7e); color: white;"> 💬 Order Your Custom Frame </a>
+     </div>
+    </div>
+   </div>
+  </section><!-- Features Section -->
+  <section class="py-16 bg-purple-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h3 class="text-2xl lg:text-3xl font-bold text-center mb-12 gradient-text">Why Choose Infinity Creation?</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+     <div class="text-center tilt-card bg-white p-6 rounded-lg shadow-lg">
+      <div class="text-3xl lg:text-4xl mb-4 float">
+       🚚
+      </div>
+      <h4 class="text-lg lg:text-xl font-bold mb-2">All India Shipping</h4>
+      <p class="text-gray-600">Reliable delivery across India</p>
+     </div>
+     <div class="text-center tilt-card bg-white p-6 rounded-lg shadow-lg">
+      <div class="text-3xl lg:text-4xl mb-4 float">
+       ⭐
+      </div>
+      <h4 class="text-lg lg:text-xl font-bold mb-2">Premium Quality</h4>
+      <p class="text-gray-600">High-quality materials and craftsmanship</p>
+     </div>
+     <div class="text-center tilt-card bg-white p-6 rounded-lg shadow-lg">
+      <div class="text-3xl lg:text-4xl mb-4 float">
+       🎨
+      </div>
+      <h4 class="text-lg lg:text-xl font-bold mb-2">Custom Design</h4>
+      <p class="text-gray-600">Personalized frames for your memories</p>
+     </div>
+     <div class="text-center tilt-card bg-white p-6 rounded-lg shadow-lg">
+      <div class="text-3xl lg:text-4xl mb-4 float">
+       💬
+      </div>
+      <h4 class="text-lg lg:text-xl font-bold mb-2">24/7 Support</h4>
+      <p class="text-gray-600">WhatsApp support anytime</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <h3 class="text-3xl lg:text-5xl font-bold serif-font navy-text mb-4">About Infinity Creation</h3>
+     <div class="section-divider w-24 mx-auto"></div>
+     <p class="text-lg lg:text-xl indigo-text font-medium">Crafting memories since our inception</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+     <div class="slide-in-left">
+      <div class="luxury-card p-6 lg:p-8">
+       <h4 class="text-xl lg:text-2xl font-bold navy-text mb-6">Our Story</h4>
+       <p class="text-gray-700 mb-6 leading-relaxed">Welcome to Infinity Creation, your trusted partner for premium photo frames in Coimbatore, Tamil Nadu. Founded by <strong class="gold-accent">Bismillah Khan</strong>, we specialize in creating beautiful, high-quality frames that preserve your precious memories with style and elegance.</p>
+       <p class="text-gray-700 mb-8 leading-relaxed">With years of experience in the industry, we offer both wooden and premium frames in various sizes and colors. Our commitment to quality and customer satisfaction has made us a preferred choice for customers across India.</p>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-4 bg-gray-50 rounded-lg">
+         <div class="font-bold navy-text">
+          Owner
+         </div>
+         <div class="text-gray-600">
+          Bismillah Khan
+         </div>
+        </div>
+        <div class="p-4 bg-gray-50 rounded-lg">
+         <div class="font-bold navy-text">
+          Location
+         </div>
+         <div class="text-gray-600">
+          Coimbatore, Tamil Nadu
+         </div>
+        </div>
+        <div class="p-4 bg-gray-50 rounded-lg">
+         <div class="font-bold navy-text">
+          Contact
+         </div>
+         <div class="text-gray-600">
+          8220594867
+         </div>
+        </div>
+        <div class="p-4 bg-gray-50 rounded-lg">
+         <div class="font-bold navy-text">
+          Service Area
+         </div>
+         <div class="text-gray-600">
+          All India Shipping
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="slide-in-right">
+      <div class="luxury-card p-6 lg:p-8" style="background: var(--premium-gradient);">
+       <div class="text-center text-white">
+        <div class="text-4xl lg:text-6xl mb-6 float">
+         🏆
+        </div>
+        <h4 class="text-2xl lg:text-3xl font-bold mb-8 serif-font">Our Achievements</h4>
+        <div class="grid grid-cols-2 gap-6">
+         <div class="achievement-stat" style="background: rgba(255, 255, 255, 0.1); border-top: 3px solid white;">
+          <div class="text-2xl lg:text-4xl font-bold text-white" id="customerCount">
+           0
+          </div>
+          <div class="text-xs lg:text-sm text-white opacity-90">
+           Happy Customers
+          </div>
+         </div>
+         <div class="achievement-stat" style="background: rgba(255, 255, 255, 0.1); border-top: 3px solid white;">
+          <div class="text-2xl lg:text-4xl font-bold text-white" id="orderCount">
+           0
+          </div>
+          <div class="text-xs lg:text-sm text-white opacity-90">
+           Orders Delivered
+          </div>
+         </div>
+         <div class="achievement-stat" style="background: rgba(255, 255, 255, 0.1); border-top: 3px solid white;">
+          <div class="text-2xl lg:text-4xl font-bold text-white" id="ratingDisplay">
+           5.0⭐
+          </div>
+          <div class="text-xs lg:text-sm text-white opacity-90">
+           Customer Rating
+          </div>
+         </div>
+         <div class="achievement-stat" style="background: rgba(255, 255, 255, 0.1); border-top: 3px solid white;">
+          <div class="text-2xl lg:text-4xl font-bold text-white">
+           24/7
+          </div>
+          <div class="text-xs lg:text-sm text-white opacity-90">
+           Support Available
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Order Tracking -->
+  <section class="py-16 bg-gray-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h3 class="text-2xl lg:text-3xl font-bold text-center mb-12 gradient-text">Track Your Order</h3>
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+     <form id="trackingForm" onsubmit="trackOrder(event)">
+      <div class="mb-4"><label class="block text-sm font-medium mb-2">Order ID</label> <input type="text" id="trackingId" placeholder="Enter your Order ID (e.g., INF1234567890)" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div><button type="submit" class="w-full premium-btn py-2"> Track Order </button>
+     </form>
+     <div id="trackingResult" class="mt-4 hidden"><!-- Tracking result will be shown here -->
+     </div>
+    </div>
+   </div>
+  </section><!-- Contact Section -->
+  <section class="py-16 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h3 class="text-2xl lg:text-3xl font-bold text-center mb-12 gradient-text">Get In Touch</h3>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+     <div class="slide-in-left">
+      <h4 class="text-lg lg:text-xl font-bold mb-6">Contact Information</h4>
+      <div class="space-y-4">
+       <div class="flex items-center"><span class="text-xl lg:text-2xl mr-4">👤</span>
+        <div>
+         <div class="font-medium">
+          Bismillah Khan
+         </div>
+         <div class="text-gray-600">
+          Owner, Infinity Creation
+         </div>
+        </div>
+       </div>
+       <div class="flex items-center"><span class="text-xl lg:text-2xl mr-4">📞</span>
+        <div>
+         <div class="font-medium">
+          8220594867 / 6379809220
+         </div>
+         <div class="text-gray-600">
+          Call anytime for inquiries
+         </div>
+        </div>
+       </div>
+       <div class="flex items-center"><span class="text-xl lg:text-2xl mr-4">📍</span>
+        <div>
+         <div class="font-medium">
+          Coimbatore, Tamil Nadu
+         </div>
+         <div class="text-gray-600">
+          India
+         </div>
+        </div>
+       </div>
+       <div class="flex items-center"><span class="text-xl lg:text-2xl mr-4">💬</span>
+        <div><a href="https://wa.me/918220594867" class="font-medium text-green-600 hover:text-green-700">WhatsApp Support</a>
+         <div class="text-gray-600">
+          Quick response guaranteed
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="slide-in-right">
+      <form id="contactForm" onsubmit="submitContact(event)" class="bg-gray-50 p-6 rounded-lg">
+       <h4 class="text-lg lg:text-xl font-bold mb-4">Send us a Message</h4>
+       <div class="mb-4"><label class="block text-sm font-medium mb-2">Name</label> <input type="text" id="contactName" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+       </div>
+       <div class="mb-4"><label class="block text-sm font-medium mb-2">Phone</label> <input type="tel" id="contactPhone" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+       </div>
+       <div class="mb-4"><label class="block text-sm font-medium mb-2">Message</label> <textarea id="contactMessage" required rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+       </div><button type="submit" class="w-full premium-btn"> Send via WhatsApp </button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div>
+      <div class="flex items-center mb-4">
+       <h4 class="text-lg lg:text-xl font-bold gradient-text">Infinity Creation</h4>
+      </div>
+      <p class="text-gray-300 mb-4">Premium photo frames crafted with love and precision. Preserving your memories with style since our inception.</p>
+      <div class="flex space-x-4"><a href="https://wa.me/918220594867" class="text-green-400 hover:text-green-300 text-xl lg:text-2xl">📱</a> <a href="tel:8220594867" class="text-blue-400 hover:text-blue-300 text-xl lg:text-2xl">📞</a>
+      </div>
+     </div>
+     <div>
+      <h4 class="text-lg lg:text-xl font-bold mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+       <li><a href="#products" class="text-gray-300 hover:text-white">Products</a></li>
+       <li><button onclick="showCart()" class="text-gray-300 hover:text-white">Cart</button></li>
+       <li><button onclick="showPrivacyPolicy()" class="text-gray-300 hover:text-white">Privacy Policy</button></li>
+       <li><a href="https://wa.me/918220594867" class="text-gray-300 hover:text-white">Contact Support</a></li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="text-lg lg:text-xl font-bold mb-4">Business Info</h4>
+      <ul class="space-y-2 text-gray-300">
+       <li>Owner: Bismillah Khan</li>
+       <li>Location: Coimbatore, Tamil Nadu</li>
+       <li>Phone: 8220594867</li>
+       <li>Service: All India Shipping</li>
+      </ul>
+     </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+     <p>© 2024 Infinity Creation. All rights reserved.</p>
+     <p class="mt-2 text-sm">Website designed by <span class="text-purple-400 font-semibold">GROWNEXT MEDIA TECH</span></p>
+    </div>
+   </div>
+  </footer><!-- WhatsApp Floating Button --> <a href="https://wa.me/918220594867" class="whatsapp-float" title="Chat on WhatsApp">
+   <svg width="32" height="32" viewbox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516" />
+   </svg></a> <!-- Owner Login Button --> <button onclick="showOwnerLogin()" class="owner-login-btn" title="Owner Login"> 🔑 </button> <!-- Modals --> <!-- Owner Login Modal -->
+  <div id="ownerLoginModal" class="modal">
+   <div class="modal-content p-6 w-full max-w-md">
+    <div class="flex justify-between items-center mb-6">
+     <h3 class="text-xl lg:text-2xl font-bold">Owner Access</h3><button onclick="closeModal('ownerLoginModal')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+    </div>
+    <form id="ownerLoginForm" onsubmit="ownerLogin(event)">
+     <div class="mb-4"><label class="block text-sm font-medium mb-2">Password</label> <input type="password" id="ownerPassword" placeholder="Enter owner password" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+     </div><button type="submit" class="w-full premium-btn py-2 font-semibold"> Login </button>
+    </form>
+    <div class="mt-4 text-sm text-gray-600">
+     <p><strong>Owner:</strong> Bismillah Khan</p>
+     <p><strong>Default Password:</strong> infinity123</p>
+    </div>
+   </div>
+  </div><!-- Cart Modal -->
+  <div id="cartModal" class="modal">
+   <div class="modal-content p-6 w-full max-w-2xl">
+    <div class="flex justify-between items-center mb-6">
+     <h3 class="text-xl lg:text-2xl font-bold">Shopping Cart</h3><button onclick="closeModal('cartModal')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+    </div>
+    <div id="cartItems" class="space-y-4 mb-6"><!-- Cart items will be loaded here -->
+    </div>
+    <div class="border-t pt-4">
+     <div class="flex justify-between items-center mb-4"><span class="text-lg lg:text-xl font-bold">Total: ₹<span id="cartTotal">0</span></span> <button onclick="proceedToCheckout()" class="premium-btn px-4 lg:px-6 py-2"> Proceed to Checkout </button>
+     </div>
+    </div>
+   </div>
+  </div><!-- Quick View Modal -->
+  <div id="quickViewModal" class="modal">
+   <div class="modal-content p-6 w-full max-w-4xl">
+    <div class="flex justify-between items-center mb-6">
+     <h3 class="text-xl lg:text-2xl font-bold" id="quickViewTitle">Product Details</h3><button onclick="closeModal('quickViewModal')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+    </div>
+    <div id="quickViewContent"><!-- Quick view content will be loaded here -->
+    </div>
+   </div>
+  </div><!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal">
+   <div class="modal-content p-6 w-full max-w-2xl">
+    <div class="flex justify-between items-center mb-6">
+     <h3 class="text-xl lg:text-2xl font-bold">Checkout</h3><button onclick="closeModal('checkoutModal')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+    </div>
+    <form id="checkoutForm" onsubmit="placeOrder(event)">
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div><label class="block text-sm font-medium mb-2">Full Name *</label> <input type="text" id="customerName" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+      <div><label class="block text-sm font-medium mb-2">Phone Number *</label> <input type="tel" id="customerPhone" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+      <div class="md:col-span-2"><label class="block text-sm font-medium mb-2">Email</label> <input type="email" id="customerEmail" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+      <div class="md:col-span-2"><label class="block text-sm font-medium mb-2">Address *</label> <textarea id="customerAddress" required rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+      </div>
+      <div><label class="block text-sm font-medium mb-2">City *</label> <input type="text" id="customerCity" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+      <div><label class="block text-sm font-medium mb-2">State *</label> <input type="text" id="customerState" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+      <div><label class="block text-sm font-medium mb-2">Pincode *</label> <input type="text" id="customerPincode" required pattern="[0-9]{6}" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+     </div>
+     <div class="border-t pt-4">
+      <div class="flex justify-between items-center mb-4"><span class="text-lg lg:text-xl font-bold">Total: ₹<span id="checkoutTotal">0</span></span>
+       <div class="space-x-2"><button type="button" onclick="showPaymentQR()" class="premium-btn px-3 lg:px-4 py-2"> Pay Now </button> <button type="submit" id="placeOrderBtn" class="premium-btn px-3 lg:px-4 py-2"> Place Order </button>
+       </div>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div><!-- Payment QR Modal -->
+  <div id="paymentModal" class="modal">
+   <div class="modal-content p-6 w-full max-w-md text-center">
+    <div class="flex justify-between items-center mb-6">
+     <h3 class="text-xl lg:text-2xl font-bold">Payment</h3><button onclick="closeModal('paymentModal')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+    </div>
+    <div class="mb-6">
+     <div class="bg-gray-100 p-8 rounded-lg mb-4">
+      <div class="text-4xl lg:text-6xl mb-4">
+       📱
+      </div>
+      <p class="text-sm text-gray-600">UPI QR Code</p>
+      <p class="font-bold">bismillahkhan@paytm</p>
+     </div>
+     <p class="text-sm text-gray-600 mb-4">Scan this QR code with any UPI app to make payment</p>
+     <div class="text-lg lg:text-xl font-bold text-green-600">
+      Amount: ₹<span id="paymentAmount">0</span>
+     </div>
+    </div><button onclick="confirmPayment()" class="w-full premium-btn py-2"> I have made the payment </button>
+   </div>
+  </div><!-- Order Success Modal -->
+  <div id="orderSuccessModal" class="modal">
+   <div class="modal-content p-6 w-full max-w-md text-center">
+    <div class="mb-6">
+     <div class="text-4xl lg:text-6xl mb-4 bounce">
+      🎉
+     </div>
+     <h3 class="text-xl lg:text-2xl font-bold mb-4">Order Placed Successfully!</h3>
+     <p class="text-gray-600 mb-4">Your order has been received and will be processed soon.</p>
+     <div class="bg-gray-100 p-4 rounded-lg mb-4">
+      <p class="text-sm text-gray-600">Order ID</p>
+      <p class="font-bold text-base lg:text-lg" id="orderIdDisplay">INF1234567890</p>
+     </div>
+     <p class="text-sm text-gray-600">You will receive a WhatsApp confirmation shortly.</p>
+    </div><button onclick="closeModal('orderSuccessModal')" class="w-full premium-btn py-2"> Continue Shopping </button>
+   </div>
+  </div><!-- Privacy Policy Modal -->
+  <div id="privacyModal" class="modal">
+   <div class="modal-content p-6 w-full max-w-2xl">
+    <div class="flex justify-between items-center mb-6">
+     <h3 class="text-xl lg:text-2xl font-bold">Privacy Policy</h3><button onclick="closeModal('privacyModal')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+    </div>
+    <div class="space-y-4 text-gray-600">
+     <p><strong>Infinity Creation Privacy Policy</strong></p>
+     <p>We respect your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data.</p>
+     <p><strong>Information We Collect:</strong></p>
+     <ul class="list-disc list-inside space-y-1">
+      <li>Contact information (name, phone, email, address)</li>
+      <li>Order details and preferences</li>
+      <li>Photos uploaded for frame customization</li>
+     </ul>
+     <p><strong>How We Use Your Information:</strong></p>
+     <ul class="list-disc list-inside space-y-1">
+      <li>Process and fulfill your orders</li>
+      <li>Communicate about your orders via WhatsApp/phone</li>
+      <li>Improve our products and services</li>
+     </ul>
+     <p><strong>Data Security:</strong></p>
+     <p>We implement appropriate security measures to protect your personal information. Your data is stored securely and never shared with third parties without your consent.</p>
+     <p><strong>Contact Us:</strong></p>
+     <p>For any privacy concerns, contact Bismillah Khan at 8220594867 or via WhatsApp.</p>
+    </div>
+   </div>
+  </div><!-- Sample Upload Modal -->
+  <div id="sampleUploadModal" class="modal">
+   <div class="modal-content p-6 w-full max-w-md">
+    <div class="flex justify-between items-center mb-6">
+     <h3 class="text-xl lg:text-2xl font-bold">Upload Sample Work</h3><button onclick="closeModal('sampleUploadModal')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+    </div>
+    <form id="sampleUploadForm" onsubmit="uploadSample(event)">
+     <div class="mb-4"><label class="block text-sm font-medium mb-2">Sample Title</label> <input type="text" id="sampleTitle" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+     </div>
+     <div class="mb-4"><label class="block text-sm font-medium mb-2">Upload Image</label> <input type="file" id="sampleImage" accept="image/*" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+     </div><button type="submit" id="uploadSampleBtn" class="w-full premium-btn py-2"> Upload Sample </button>
+    </form>
+   </div>
+  </div>
+  <script>
+        // Global variables
+        let cart = JSON.parse(localStorage.getItem('infinityCart')) || [];
+        let selectedRating = 5;
+        let isOwnerLoggedIn = localStorage.getItem('ownerLoggedIn') === 'true';
+        let allData = [];
+        let isDataLoaded = false;
+
+        // Products data
+        const products = [
+            {
+                id: 1,
+                name: "A5 Size Photo Frame",
+                price: 199,
+                originalPrice: 347,
+                category: "wooden",
+                image: "🖼️",
+                description: "Perfect A5 size frame for your cherished memories",
+                features: ["A5 size (148×210 mm)", "Premium quality", "Multiple colors", "Best price guarantee"],
+                sizes: ["A5"],
+                colors: ["Natural", "Dark Brown", "Light Brown", "Black", "White"]
+            },
+            {
+                id: 2,
+                name: "A4 Size Photo Frame",
+                price: 349,
+                originalPrice: 599,
+                category: "wooden",
+                image: "🖼️",
+                description: "Classic A4 size frame for larger photos and certificates",
+                features: ["A4 size (210×297 mm)", "High-quality finish", "Durable construction", "Professional look"],
+                sizes: ["A4"],
+                colors: ["Natural", "Dark Brown", "Light Brown", "Black", "White"]
+            },
+            {
+                id: 3,
+                name: "A4 + A5 Combo Frame Set",
+                price: 599,
+                originalPrice: 799,
+                category: "combo",
+                image: "🖼️",
+                description: "Perfect combo set with A4 and A5 frames",
+                features: ["A4 + A5 combo", "Matching design", "Great value", "Perfect for gifting"],
+                sizes: ["A4 + A5"],
+                colors: ["Natural", "Dark Brown", "Light Brown", "Black", "White"]
+            },
+            {
+                id: 4,
+                name: "A3 + A4 + A5 Combo Set",
+                price: 1299,
+                originalPrice: 1699,
+                category: "combo",
+                image: "🖼️",
+                description: "Complete frame set with A3, A4, and A5 sizes",
+                features: ["A3 + A4 + A5 combo", "Complete set", "Maximum savings", "Perfect family pack"],
+                sizes: ["A3 + A4 + A5"],
+                colors: ["Natural", "Dark Brown", "Light Brown", "Black", "White"]
+            },
+            {
+                id: 5,
+                name: "A3 Size Photo Frame",
+                price: 599,
+                originalPrice: 899,
+                category: "wooden",
+                image: "🖼️",
+                description: "Large A3 size frame for posters and large photos",
+                features: ["A3 size (297×420 mm)", "Premium finish", "Wall mounting", "Professional display"],
+                sizes: ["A3"],
+                colors: ["Natural", "Dark Brown", "Light Brown", "Black", "White"]
+            },
+            {
+                id: 6,
+                name: "A2 Size Photo Frame",
+                price: 899,
+                originalPrice: 1299,
+                category: "wooden",
+                image: "🖼️",
+                description: "Extra large A2 size frame for special displays",
+                features: ["A2 size (420×594 mm)", "Extra large", "Premium quality", "Statement piece"],
+                sizes: ["A2"],
+                colors: ["Natural", "Dark Brown", "Light Brown", "Black", "White"]
+            },
+            {
+                id: 7,
+                name: "A1 Size Photo Frame",
+                price: 1499,
+                originalPrice: 1999,
+                category: "wooden",
+                image: "🖼️",
+                description: "Largest A1 size frame for maximum impact",
+                features: ["A1 size (594×841 mm)", "Largest size", "Premium construction", "Maximum impact"],
+                sizes: ["A1"],
+                colors: ["Natural", "Dark Brown", "Light Brown", "Black", "White"]
+            }
+        ];
+
+        // Data SDK Handler
+        const dataHandler = {
+            onDataChanged(data) {
+                allData = data;
+                isDataLoaded = true;
+                
+                // Update UI with loaded data
+                loadReviews();
+                loadGallery();
+                updateStatistics();
+            }
+        };
+
+        // Initialize Data SDK
+        async function initializeDataSDK() {
+            if (!window.dataSdk) {
+                console.error('Data SDK not available');
+                return;
+            }
+
+            const initResult = await window.dataSdk.init(dataHandler);
+            if (!initResult.isOk) {
+                console.error('Failed to initialize Data SDK:', initResult.error);
+                showErrorMessage('Failed to load data. Please refresh the page.');
+            }
+        }
+
+        // Initialize the website
+        document.addEventListener('DOMContentLoaded', async function() {
+            await initializeDataSDK();
+            updateCartCounter();
+            setupStarRating();
+            setupScrollAnimations();
+            checkOwnerAccess();
+            
+            // Load saved privacy banner state
+            if (localStorage.getItem('privacyBannerClosed') === 'true') {
+                closePrivacyBanner();
+            }
+        });
+
+        // Helper functions to get data by type
+        function getOrders() {
+            return allData.filter(item => item.type === 'order');
+        }
+
+        function getReviews() {
+            return allData.filter(item => item.type === 'review');
+        }
+
+        function getGallery() {
+            return allData.filter(item => item.type === 'gallery');
+        }
+
+        function updateStatistics() {
+            const orders = getOrders();
+            const reviews = getReviews();
+            
+            // Update customer count
+            const uniqueCustomers = new Set(orders.map(o => o.customer_phone)).size;
+            document.getElementById('customerCount').textContent = uniqueCustomers || '0';
+            
+            // Update order count
+            document.getElementById('orderCount').textContent = orders.length || '0';
+            
+            // Update rating display
+            const avgRating = reviews.length > 0 
+                ? (reviews.reduce((sum, r) => sum + r.review_rating, 0) / reviews.length).toFixed(1)
+                : '5.0';
+            document.getElementById('ratingDisplay').textContent = avgRating + '⭐';
+        }
+
+        // Owner access functions
+        function checkOwnerAccess() {
+            if (isOwnerLoggedIn) {
+                document.getElementById('ownerControls').classList.remove('hidden');
+            }
+        }
+
+        function showOwnerLogin() {
+            showModal('ownerLoginModal');
+        }
+
+        function ownerLogin(event) {
+            event.preventDefault();
+            
+            const password = document.getElementById('ownerPassword').value;
+            const correctPassword = 'infinity123';
+            
+            if (password === correctPassword) {
+                isOwnerLoggedIn = true;
+                localStorage.setItem('ownerLoggedIn', 'true');
+                document.getElementById('ownerControls').classList.remove('hidden');
+                closeModal('ownerLoginModal');
+                showSuccessMessage('Welcome back, Bismillah Khan! You now have owner access.');
+                document.getElementById('ownerLoginForm').reset();
+            } else {
+                showErrorMessage('Incorrect password. Please try again.');
+            }
+        }
+
+        function showErrorMessage(message) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'fixed top-20 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 slide-in-right';
+            errorDiv.textContent = message;
+            
+            document.body.appendChild(errorDiv);
+            
+            setTimeout(() => {
+                errorDiv.remove();
+            }, 3000);
+        }
+
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        function scrollToContact() {
+            const contactSection = document.querySelector('#about').nextElementSibling.nextElementSibling.nextElementSibling;
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showSuccessMessage(message) {
+            const successDiv = document.createElement('div');
+            successDiv.className = 'fixed top-20 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 slide-in-right';
+            successDiv.textContent = message;
+            
+            document.body.appendChild(successDiv);
+            
+            setTimeout(() => {
+                successDiv.remove();
+            }, 3000);
+        }
+
+        // Product functions
+        function quickView(productId) {
+            const product = products.find(p => p.id === productId);
+            const modal = document.getElementById('quickViewModal');
+            const title = document.getElementById('quickViewTitle');
+            const content = document.getElementById('quickViewContent');
+            
+            title.textContent = product.name;
+            content.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="text-center">
+                        <div class="text-8xl mb-4">${product.image}</div>
+                        <div id="photoPreview-${productId}" class="hidden">
+                            <img id="previewImg-${productId}" class="photo-preview mx-auto mb-4" alt="Photo preview">
+                            <button onclick="removePhoto(${productId})" class="text-red-500 hover:text-red-700 text-sm">Remove Photo</button>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Upload Your Photo</label>
+                            <input type="file" id="photoUpload-${productId}" accept="image/*" onchange="previewPhoto(${productId})" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-4">${product.name}</h4>
+                        <p class="text-gray-600 mb-4">${product.description}</p>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="text-3xl font-bold text-green-600">₹${product.price}</span>
+                            <span class="text-xl text-gray-500 line-through">₹${product.originalPrice}</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Size</label>
+                            <select id="sizeSelect-${productId}" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                                ${product.sizes.map(size => `<option value="${size}">${size} inches</option>`).join('')}
+                            </select>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Color</label>
+                            <select id="colorSelect-${productId}" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                                ${product.colors.map(color => `<option value="${color}">${color}</option>`).join('')}
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h5 class="font-bold mb-2">Features:</h5>
+                            <ul class="list-disc list-inside space-y-1 text-gray-600">
+                                ${product.features.map(feature => `<li>${feature}</li>`).join('')}
+                            </ul>
+                        </div>
+                        
+                        <button onclick="addToCartWithOptions(${productId})" class="w-full premium-btn py-3 text-lg font-bold">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            showModal('quickViewModal');
+        }
+
+        function previewPhoto(productId) {
+            const input = document.getElementById(`photoUpload-${productId}`);
+            const preview = document.getElementById(`photoPreview-${productId}`);
+            const img = document.getElementById(`previewImg-${productId}`);
+            
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    img.src = e.target.result;
+                    preview.classList.remove('hidden');
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function removePhoto(productId) {
+            const input = document.getElementById(`photoUpload-${productId}`);
+            const preview = document.getElementById(`photoPreview-${productId}`);
+            
+            input.value = '';
+            preview.classList.add('hidden');
+        }
+
+        // Cart functions
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            const existingItem = cart.find(item => item.id === productId);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    ...product,
+                    quantity: 1,
+                    size: product.sizes[0],
+                    color: product.colors[0],
+                    photo: null
+                });
+            }
+            
+            saveCart();
+            updateCartCounter();
+            showCartAnimation();
+        }
+
+        function addToCartWithOptions(productId) {
+            const product = products.find(p => p.id === productId);
+            const size = document.getElementById(`sizeSelect-${productId}`).value;
+            const color = document.getElementById(`colorSelect-${productId}`).value;
+            const photoInput = document.getElementById(`photoUpload-${productId}`);
+            
+            let photo = null;
+            if (photoInput.files && photoInput.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    photo = e.target.result;
+                    addItemToCart(product, size, color, photo);
+                };
+                reader.readAsDataURL(photoInput.files[0]);
+            } else {
+                addItemToCart(product, size, color, photo);
+            }
+        }
+
+        function addItemToCart(product, size, color, photo) {
+            const cartItem = {
+                ...product,
+                quantity: 1,
+                size: size,
+                color: color,
+                photo: photo,
+                cartId: Date.now()
+            };
+            
+            cart.push(cartItem);
+            saveCart();
+            updateCartCounter();
+            showCartAnimation();
+            closeModal('quickViewModal');
+        }
+
+        function removeFromCart(cartId) {
+            cart = cart.filter(item => item.cartId !== cartId);
+            saveCart();
+            updateCartCounter();
+            loadCartItems();
+        }
+
+        function updateQuantity(cartId, change) {
+            const item = cart.find(item => item.cartId === cartId);
+            if (item) {
+                item.quantity += change;
+                if (item.quantity <= 0) {
+                    removeFromCart(cartId);
+                } else {
+                    saveCart();
+                    loadCartItems();
+                }
+            }
+        }
+
+        function saveCart() {
+            localStorage.setItem('infinityCart', JSON.stringify(cart));
+        }
+
+        function updateCartCounter() {
+            const counter = document.getElementById('cartCounter');
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            
+            if (totalItems > 0) {
+                counter.textContent = totalItems;
+                counter.classList.remove('hidden');
+                counter.classList.add('bounce');
+            } else {
+                counter.classList.add('hidden');
+            }
+        }
+
+        function showCartAnimation() {
+            const counter = document.getElementById('cartCounter');
+            counter.classList.add('shake');
+            setTimeout(() => counter.classList.remove('shake'), 500);
+        }
+
+        function showCart() {
+            loadCartItems();
+            showModal('cartModal');
+        }
+
+        function loadCartItems() {
+            const container = document.getElementById('cartItems');
+            const totalElement = document.getElementById('cartTotal');
+            
+            if (cart.length === 0) {
+                container.innerHTML = '<p class="text-center text-gray-500 py-8">Your cart is empty</p>';
+                totalElement.textContent = '0';
+                return;
+            }
+            
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            totalElement.textContent = total;
+            
+            container.innerHTML = cart.map(item => `
+                <div class="flex items-center space-x-4 p-4 border border-gray-200 rounded-lg">
+                    <div class="text-3xl">${item.image}</div>
+                    ${item.photo ? `<img src="${item.photo}" class="w-16 h-16 object-cover rounded">` : ''}
+                    <div class="flex-1">
+                        <h4 class="font-bold">${item.name}</h4>
+                        <p class="text-sm text-gray-600">${item.size} - ${item.color}</p>
+                        <p class="text-green-600 font-bold">₹${item.price}</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="updateQuantity(${item.cartId}, -1)" class="bg-gray-200 text-gray-700 w-8 h-8 rounded-full hover:bg-gray-300">-</button>
+                        <span class="font-bold">${item.quantity}</span>
+                        <button onclick="updateQuantity(${item.cartId}, 1)" class="bg-gray-200 text-gray-700 w-8 h-8 rounded-full hover:bg-gray-300">+</button>
+                    </div>
+                    <button onclick="removeFromCart(${item.cartId})" class="text-red-500 hover:text-red-700">🗑️</button>
+                </div>
+            `).join('');
+        }
+
+        // Checkout functions
+        function proceedToCheckout() {
+            if (cart.length === 0) {
+                showSuccessMessage('Your cart is empty!');
+                return;
+            }
+            
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            document.getElementById('checkoutTotal').textContent = total;
+            
+            closeModal('cartModal');
+            showModal('checkoutModal');
+        }
+
+        async function placeOrder(event) {
+            event.preventDefault();
+            
+            const btn = document.getElementById('placeOrderBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="loading-spinner"></span> Processing...';
+            
+            const orderId = 'INF' + Date.now();
+            const orderData = {
+                type: 'order',
+                order_id: orderId,
+                customer_name: document.getElementById('customerName').value,
+                customer_phone: document.getElementById('customerPhone').value,
+                customer_email: document.getElementById('customerEmail').value || '',
+                customer_address: document.getElementById('customerAddress').value,
+                customer_city: document.getElementById('customerCity').value,
+                customer_state: document.getElementById('customerState').value,
+                customer_pincode: document.getElementById('customerPincode').value,
+                items_json: JSON.stringify(cart),
+                total: cart.reduce((sum, item) => sum + (item.price * item.quantity), 0),
+                date: new Date().toISOString(),
+                status: 'Pending'
+            };
+            
+            // Check if limit reached
+            const currentOrders = getOrders();
+            if (currentOrders.length >= 999) {
+                showErrorMessage('Maximum order limit reached. Please contact support.');
+                btn.disabled = false;
+                btn.textContent = 'Place Order';
+                return;
+            }
+            
+            const result = await window.dataSdk.create(orderData);
+            
+            if (result.isOk) {
+                // Send WhatsApp message
+                sendOrderToWhatsApp(orderData);
+                
+                // Clear cart
+                cart = [];
+                saveCart();
+                updateCartCounter();
+                
+                // Show success modal
+                document.getElementById('orderIdDisplay').textContent = orderId;
+                closeModal('checkoutModal');
+                showModal('orderSuccessModal');
+                
+                btn.disabled = false;
+                btn.textContent = 'Place Order';
+            } else {
+                showErrorMessage('Failed to place order. Please try again.');
+                btn.disabled = false;
+                btn.textContent = 'Place Order';
+            }
+        }
+
+        function sendOrderToWhatsApp(order) {
+            const items = JSON.parse(order.items_json);
+            const message = `🛒 *New Order from Infinity Creation*
+
+📋 *Order ID:* ${order.order_id}
+👤 *Customer:* ${order.customer_name}
+📞 *Phone:* ${order.customer_phone}
+📧 *Email:* ${order.customer_email}
+
+📍 *Address:*
+${order.customer_address}
+${order.customer_city}, ${order.customer_state} - ${order.customer_pincode}
+
+🛍️ *Items:*
+${items.map(item => `• ${item.name} (${item.size}, ${item.color}) x${item.quantity} - ₹${item.price * item.quantity}`).join('\n')}
+
+💰 *Total Amount:* ₹${order.total}
+
+Please confirm this order. Thank you! 🙏`;
+
+            const whatsappUrl = `https://wa.me/918220594867?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Payment functions
+        function showPaymentQR() {
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            document.getElementById('paymentAmount').textContent = total;
+            showModal('paymentModal');
+        }
+
+        function confirmPayment() {
+            closeModal('paymentModal');
+            showSuccessMessage('Payment confirmation received! Please proceed to place your order.');
+        }
+
+        // Order tracking
+        function trackOrder(event) {
+            event.preventDefault();
+            
+            const orderId = document.getElementById('trackingId').value;
+            const orders = getOrders();
+            const order = orders.find(o => o.order_id === orderId);
+            const resultDiv = document.getElementById('trackingResult');
+            
+            if (order) {
+                resultDiv.innerHTML = `
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <h4 class="font-bold text-green-800 mb-2">Order Found!</h4>
+                        <p><strong>Order ID:</strong> ${order.order_id}</p>
+                        <p><strong>Status:</strong> <span class="text-green-600">${order.status}</span></p>
+                        <p><strong>Date:</strong> ${new Date(order.date).toLocaleDateString()}</p>
+                        <p><strong>Total:</strong> ₹${order.total}</p>
+                        <p class="text-sm text-gray-600 mt-2">For more details, contact us on WhatsApp.</p>
+                    </div>
+                `;
+                resultDiv.classList.remove('hidden');
+            } else {
+                resultDiv.innerHTML = `
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                        <h4 class="font-bold text-red-800 mb-2">Order Not Found</h4>
+                        <p class="text-red-600">Please check your Order ID and try again.</p>
+                    </div>
+                `;
+                resultDiv.classList.remove('hidden');
+            }
+        }
+
+        // Review functions
+        function setupStarRating() {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    selectedRating = parseInt(this.dataset.rating);
+                    updateStarDisplay();
+                });
+                
+                star.addEventListener('mouseover', function() {
+                    const rating = parseInt(this.dataset.rating);
+                    highlightStars(rating);
+                });
+            });
+            
+            document.getElementById('starRating').addEventListener('mouseleave', function() {
+                updateStarDisplay();
+            });
+        }
+
+        function highlightStars(rating) {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
+        }
+
+        function updateStarDisplay() {
+            highlightStars(selectedRating);
+        }
+
+        async function addReview(event) {
+            event.preventDefault();
+            
+            const btn = document.getElementById('reviewSubmitBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="loading-spinner"></span> Submitting...';
+            
+            const reviewData = {
+                type: 'review',
+                review_name: document.getElementById('reviewName').value,
+                review_rating: selectedRating,
+                review_text: document.getElementById('reviewText').value,
+                review_date: new Date().toISOString()
+            };
+            
+            // Check if limit reached
+            const currentReviews = getReviews();
+            if (currentReviews.length >= 999) {
+                showErrorMessage('Maximum review limit reached.');
+                btn.disabled = false;
+                btn.textContent = 'Submit Review';
+                return;
+            }
+            
+            const result = await window.dataSdk.create(reviewData);
+            
+            if (result.isOk) {
+                // Reset form
+                document.getElementById('reviewForm').reset();
+                selectedRating = 5;
+                updateStarDisplay();
+                
+                showSuccessMessage('Thank you for your review!');
+                btn.disabled = false;
+                btn.textContent = 'Submit Review';
+            } else {
+                showErrorMessage('Failed to submit review. Please try again.');
+                btn.disabled = false;
+                btn.textContent = 'Submit Review';
+            }
+        }
+
+        function loadReviews() {
+            const reviews = getReviews();
+            const grid = document.getElementById('reviewsGrid');
+            const avgRatingElement = document.getElementById('avgRating');
+            const totalReviewsElement = document.getElementById('totalReviews');
+            
+            // Calculate average rating
+            const avgRating = reviews.length > 0 ? 
+                (reviews.reduce((sum, review) => sum + review.review_rating, 0) / reviews.length).toFixed(1) : 
+                '5.0';
+            
+            avgRatingElement.textContent = avgRating;
+            totalReviewsElement.textContent = `Based on ${reviews.length} reviews`;
+            
+            if (reviews.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center text-gray-500 py-8">No reviews yet. Be the first to review!</div>';
+                return;
+            }
+            
+            // Display reviews (show latest 6)
+            const displayReviews = reviews.slice(0, 6);
+            grid.innerHTML = displayReviews.map(review => `
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            ${'★'.repeat(review.review_rating)}${'☆'.repeat(5 - review.review_rating)}
+                        </div>
+                        <span class="text-sm text-gray-500">${new Date(review.review_date).toLocaleDateString()}</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">"${review.review_text}"</p>
+                    <p class="font-bold text-purple-600">- ${review.review_name}</p>
+                </div>
+            `).join('');
+        }
+
+        // Gallery functions
+        function showSampleUpload() {
+            if (!isOwnerLoggedIn) {
+                showErrorMessage('Owner access required to upload samples.');
+                return;
+            }
+            showModal('sampleUploadModal');
+        }
+
+        async function uploadSample(event) {
+            event.preventDefault();
+            
+            if (!isOwnerLoggedIn) {
+                showErrorMessage('Owner access required to upload samples.');
+                return;
+            }
+            
+            const btn = document.getElementById('uploadSampleBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="loading-spinner"></span> Uploading...';
+            
+            const title = document.getElementById('sampleTitle').value;
+            const imageInput = document.getElementById('sampleImage');
+            
+            if (imageInput.files && imageInput.files[0]) {
+                const reader = new FileReader();
+                reader.onload = async function(e) {
+                    const sampleData = {
+                        type: 'gallery',
+                        gallery_title: title,
+                        gallery_image: e.target.result,
+                        gallery_date: new Date().toISOString()
+                    };
+                    
+                    // Check if limit reached
+                    const currentGallery = getGallery();
+                    if (currentGallery.length >= 999) {
+                        showErrorMessage('Maximum gallery limit reached.');
+                        btn.disabled = false;
+                        btn.textContent = 'Upload Sample';
+                        return;
+                    }
+                    
+                    const result = await window.dataSdk.create(sampleData);
+                    
+                    if (result.isOk) {
+                        closeModal('sampleUploadModal');
+                        document.getElementById('sampleUploadForm').reset();
+                        showSuccessMessage('Sample work uploaded successfully!');
+                        btn.disabled = false;
+                        btn.textContent = 'Upload Sample';
+                    } else {
+                        showErrorMessage('Failed to upload sample. Please try again.');
+                        btn.disabled = false;
+                        btn.textContent = 'Upload Sample';
+                    }
+                };
+                reader.readAsDataURL(imageInput.files[0]);
+            }
+        }
+
+        function loadGallery() {
+            const gallery = getGallery();
+            const grid = document.getElementById('galleryGrid');
+            
+            if (gallery.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-16">
+                        <div class="text-6xl lg:text-8xl mb-6 float">🖼️</div>
+                        <h4 class="text-xl lg:text-2xl font-bold navy-text mb-4">Sample Gallery Coming Soon!</h4>
+                        <p class="text-gray-600 text-base lg:text-lg">We're preparing beautiful samples of our premium frames to showcase here.</p>
+                        <p class="text-gold-accent font-semibold mt-2">Check back soon to see our amazing work!</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            grid.innerHTML = gallery.map(item => `
+                <div class="luxury-card overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="relative group">
+                        <img src="${item.gallery_image}" alt="${item.gallery_title}" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h4 class="font-bold text-sm mb-1">${item.gallery_title}</h4>
+                            <p class="text-xs opacity-90">Crafted by Infinity Creation</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-white">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">${new Date(item.gallery_date).toLocaleDateString()}</span>
+                            <span class="text-xs gold-accent font-semibold">Premium Quality</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Campus Ambassador functions
+        function applyAmbassador() {
+            const message = `🎯 *Campus Ambassador Application*
+
+👋 Hello Infinity Creation!
+
+I am interested in becoming a Campus Ambassador for your brand.
+
+📚 *My Details:*
+• Name: [Please fill your name]
+• College/University: [Please fill]
+• Course & Year: [Please fill]
+• City: [Please fill]
+• Phone: [Please fill]
+
+💡 *Why I want to join:*
+[Please share your motivation]
+
+🎯 I understand that I can earn 80% profit as a Campus Ambassador and help promote your premium photo frames in my campus network.
+
+Looking forward to hearing from you! 🚀`;
+
+            const whatsappUrl = `https://wa.me/918220594867?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Contact functions
+        function submitContact(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const phone = document.getElementById('contactPhone').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            const whatsappMessage = `👋 Hello Infinity Creation!
+
+👤 *Name:* ${name}
+📞 *Phone:* ${phone}
+
+💬 *Message:*
+${message}
+
+Looking forward to your response! 🙏`;
+
+            const whatsappUrl = `https://wa.me/918220594867?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            document.getElementById('contactForm').reset();
+        }
+
+        // Modal functions
+        function showModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Privacy functions
+        function showPrivacyPolicy() {
+            showModal('privacyModal');
+        }
+
+        function closePrivacyBanner() {
+            document.getElementById('privacyBanner').style.display = 'none';
+            localStorage.setItem('privacyBannerClosed', 'true');
+        }
+
+        // Utility functions
+        function scrollToProducts() {
+            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function setupScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('slide-in-up');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // Close modals when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a51612b555f4162',t:'MTc2NDI0MzkyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
